@@ -46,7 +46,7 @@ app.post('/activeAccount',async (req,res)=>{
             currency:"usd",
         })
         
-        const response = await axios.post("http://localhost:4001/activer",{reponse:user})
+        const response = await axios.post("http://196.121.135.102:4001/activer",{reponse:user})
         if(response.data.success==true){
             status="success"
         }else{
