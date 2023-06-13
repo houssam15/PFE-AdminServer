@@ -61,6 +61,6 @@ app.post('/activeAccount',async (req,res)=>{
 
 
 
-app.post('/test',async (req,res)=>{console.log("hello i am working")})
+app.post('/test',async (req,res)=>{return res.status(200).json({msg:"hello i am working"})})
 export {};
 
