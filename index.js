@@ -24,12 +24,8 @@ app.post('/payement',async (req,res)=>{
             currency:"usd",
         })
         
-        const response = await axios.post("http://localhost:4001/renialiser",{reponse:user})
-        if(response.data.success==true){
-            status="success"
-        }else{
-            status="Failure"
-        }
+        status="success"
+
     }catch(error){
         console.log(error)
         status="Failure"
