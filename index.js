@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-const PORT = 4002;
+const PORT = 4002 || procces.env.PORT;
 // app.use("/",Routes);
 
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
