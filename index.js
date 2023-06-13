@@ -58,5 +58,9 @@ app.post('/activeAccount',async (req,res)=>{
     }
     res.json({error,status})    
 })
+
+
+
+app.post('/test',async (req,res)=>{console.log("hello i am working")})
 export {};
 
